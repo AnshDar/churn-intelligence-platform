@@ -1,0 +1,6 @@
+[tool.pytest.ini_options]
+# Put the repo root on sys.path so `import src` / `import api` work regardless of
+# how pytest is invoked (bare `pytest` in CI, or `python -m pytest` locally).
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-q"

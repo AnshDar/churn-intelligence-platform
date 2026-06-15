@@ -8,6 +8,7 @@ numpy==2.4.6
 scikit-learn==1.9.0
 xgboost==3.2.0
 shap==0.52.0
+matplotlib==3.11.0   # required by SHAP summary plots (shap's 'plots' extra)
 joblib==1.5.3
 
 # API
