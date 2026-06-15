@@ -95,6 +95,8 @@ Accenture Project/
 
 ## Quick Start
 
+> **Requires Python 3.13** (some pinned dependencies — e.g. SHAP 0.52 — need ≥3.12).
+
 ```bash
 pip install -r requirements.txt
 
@@ -287,7 +289,7 @@ docker compose up --build                         # API :8000, dashboard :8501
 
 > Dependencies are pinned in `requirements.txt` to the exact versions the project
 > was tested against (newer than the brief's original pins, which no longer
-> resolve on current Python). The image is built on `python:3.11-slim`.
+> resolve on current Python). The image is built on `python:3.13-slim`.
 
 ## Tests
 

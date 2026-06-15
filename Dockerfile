@@ -3,7 +3,7 @@
 # Churn Intelligence Platform — single image that can serve either the FastAPI
 # API (default) or the Streamlit dashboard (override the command).
 # ---------------------------------------------------------------------------
-FROM python:3.11-slim
+FROM python:3.13-slim
 
 ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \

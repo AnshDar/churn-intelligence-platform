@@ -1,5 +1,6 @@
 # Pinned to the exact versions this project was developed and tested against
-# (Python 3.11+). These supersede the project brief's older pins, which no
+# (Python 3.13; some pins such as shap 0.52 require >=3.12). These supersede
+# the project brief's older pins, which no
 # longer resolve cleanly on current Python.
 
 # Core data / ML
