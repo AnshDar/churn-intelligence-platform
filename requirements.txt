@@ -1,0 +1,31 @@
+# Pinned to the exact versions this project was developed and tested against
+# (Python 3.11+). These supersede the project brief's older pins, which no
+# longer resolve cleanly on current Python.
+
+# Core data / ML
+pandas==2.3.3
+numpy==2.4.6
+scikit-learn==1.9.0
+xgboost==3.2.0
+shap==0.52.0
+joblib==1.5.3
+
+# API
+fastapi==0.137.0
+uvicorn[standard]==0.49.0
+pydantic==2.13.4
+
+# Dashboard
+streamlit==1.58.0
+plotly==6.8.0
+
+# Persistence / tracking
+SQLAlchemy==2.0.50
+mlflow==3.13.0
+
+# Utilities
+python-dotenv==1.2.2
+
+# Testing
+pytest==9.1.0
+httpx==0.28.1

@@ -1,0 +1,27 @@
+# Version control / CI
+.git
+.github
+.gitignore
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Regenerated inside the image at build time
+data/
+models/
+reports/
+mlruns/
+mlartifacts/
+mlflow.db
+*.db
+
+# Local / editor
+.env
+.vscode/
+.idea/
+.DS_Store
+README.md

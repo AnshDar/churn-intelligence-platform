@@ -1,0 +1,31 @@
+# Runs the API and the dashboard from the same image.
+#   docker compose up --build
+#   API       -> http://localhost:8000/docs
+#   Dashboard -> http://localhost:8501
+services:
+  api:
+    build: .
+    image: churn-platform:latest
+    ports:
+      - "8000:8000"
+    # Uses the image's default CMD (uvicorn).
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  dashboard:
+    image: churn-platform:latest
+    build: .
+    depends_on:
+      - api
+    ports:
+      - "8501:8501"
+    command:
+      - streamlit
+      - run
+      - dashboard/app.py
+      - --server.port=8501
+      - --server.address=0.0.0.0
+      - --server.headless=true

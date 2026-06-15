@@ -1,0 +1,12 @@
+# Normalize all text files to LF in the repository.
+* text=auto eol=lf
+
+# Shell scripts MUST stay LF (CRLF breaks them inside the Linux container).
+*.sh text eol=lf
+
+# Treat known binary types as binary (never normalized).
+*.png binary
+*.jpg binary
+*.pkl binary
+*.joblib binary
+*.db binary
