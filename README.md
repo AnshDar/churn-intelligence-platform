@@ -4,7 +4,7 @@ Production-grade ML platform that predicts customer churn, explains predictions
 with SHAP, recommends ROI-ranked interventions, and surfaces it all through a
 real-time dashboard and API.
 
-> **Status:** ✅ Complete — all 8 phases (Baseline Model, Explainability/
+> **Status:** Complete — all 8 phases (Baseline Model, Explainability/
 > Interventions, Real-Time Scoring + SQLite logging, MLflow tracking/registry +
 > Monitoring, Streamlit dashboard, FastAPI service, Docker + GitHub Actions
 > CI/CD, Documentation).
@@ -137,7 +137,7 @@ threshold tuned on the training set.
 
 | Metric    | Value | Target  |
 |-----------|-------|---------|
-| AUC-ROC   | 0.868 | > 0.85 ✅ |
+| AUC-ROC   | 0.868 | > 0.85  |
 | Accuracy  | 0.808 | —       |
 | Precision | 0.644 | > 0.75 (see note) |
 | Recall    | 0.649 | —       |
