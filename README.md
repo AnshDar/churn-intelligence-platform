@@ -342,4 +342,4 @@ interactive (adjust the assumed success rate, see the ROI move).
 
 ## License
 
-[MIT](LICENSE) — see also the ready-to-post writeup in [docs/LINKEDIN.md](docs/LINKEDIN.md).
+[MIT](LICENSE)
